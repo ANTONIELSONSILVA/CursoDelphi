@@ -5,7 +5,7 @@ uses
   uPrincipal in 'uPrincipal.pas' {frmPrincipal},
   uDTMConexao in 'dataModule\uDTMConexao.pas' {dtmPrincipal: TDataModule},
   uTelaHeranca in 'Heranca\uTelaHeranca.pas' {frmTelaHeranca},
-  uCadCategorias in 'cadastro\uCadCategorias.pas' {frmTelaHeranca1};
+  uCadCategorias in 'cadastro\uCadCategorias.pas' {frmCadCategoria};
 
 {$R *.res}
 
@@ -13,7 +13,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmTelaHeranca, frmTelaHeranca);
-  Application.CreateForm(TfrmTelaHeranca1, frmTelaHeranca1);
   Application.Run;
 end.

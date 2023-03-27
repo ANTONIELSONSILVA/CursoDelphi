@@ -26,6 +26,7 @@ type
     N3: TMenuItem;
     procedure mnuFecharClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Categoria1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,6 +39,15 @@ var
 implementation
 
 {$R *.dfm}
+
+uses uCadCategorias;
+
+procedure TfrmPrincipal.Categoria1Click(Sender: TObject);
+begin
+  frmCadCategoria:= TfrmCadCategoria.Create(self);
+  frmCadCategoria.ShowModal;
+  frmCadCategoria.Release;
+end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
